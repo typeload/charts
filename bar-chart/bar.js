@@ -6,9 +6,9 @@ var svg = d3.select("svg")
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv('/path/to/data.csv', function(d) {
-    // function for data prep
-    d.count = +d.count;
-    return d;
+  // function for data prep
+  d.count = +d.count;
+  return d;
 }, function(error, data) {
   if (error) throw(error);
   
