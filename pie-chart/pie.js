@@ -6,7 +6,7 @@ var svg = d3.select("svg")
     g = svg.append("g").attr("transform", "translate(" + full_width/2 + "," + full_height/2 + ")"),
     radius = height/2;
 
-d3.csv('/path/to/data', function(d) {
+d3.csv('/path/to/data.csv', function(d) {
   // function for data prep
   d.count = +d.count;
   return d;
