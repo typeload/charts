@@ -9,6 +9,7 @@ var margin = {top: 30, right: 30, bottom: 30, left: 30},
 var scheme = ['#d1e4f1', '#f7f00a', '#EE4266', '#540D6E'],
     clr = d3.scaleOrdinal(scheme);
 
+// default formatting
 var format = d3.format(',d');
 
 // append tooltip div to DOM
